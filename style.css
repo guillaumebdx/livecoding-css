@@ -1,0 +1,64 @@
+:root {
+    --my-margin: 25px;
+}
+
+body {
+    font-family: Arial;
+}
+
+nav {
+    background-color: lightgrey;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: var(--my-margin);
+    height: 50px;
+    transition: .6s;
+}
+.small-img {
+    width: 50px;
+    height: auto;
+}
+.item-menu {
+    margin-right: var(--my-margin);
+    font-size: 1.5rem;
+}
+.logo {
+    margin-right: auto;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.card {
+    border: 1px solid black;
+    width: 30rem;
+    height: 30rem;
+    margin-bottom: var(--my-margin);
+}
+.burger {
+    display: none;
+    position: absolute;
+    top: 10px;
+    left:10px;
+}
+
+.burger:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.open-burger {
+    height: 250px;
+    transition: .2s;
+}
+
+@media screen and (max-width: 768px) {
+    .item-menu, .logo {
+        display: none;
+    }
+    .burger {
+        display: block;
+    }
+}
